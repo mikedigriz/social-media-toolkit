@@ -1,0 +1,7 @@
+requests
+vk
+playsound
+bs4
+selenium
+uiautomator2
+pandas
