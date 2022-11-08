@@ -14,7 +14,7 @@ channel_list = ["@tass_agency",
                 "@bazabazon",
                 "@radiogovoritmsk",
                 "@karaulny",
-                "@breakingmash",
+                "@breakingmash"
                 ]
 
 # Задержка в сек. между запросами
