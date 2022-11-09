@@ -4,6 +4,7 @@ from time import sleep
 import uiautomator2 as u2
 
 # Ставит лайки в аккаунты из списка
+# Язык приложения имеет значение.
 
 # USB - Connection
 d = u2.connect('R58M31BXMNT')  # get from "adb devices"
