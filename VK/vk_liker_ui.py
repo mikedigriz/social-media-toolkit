@@ -18,18 +18,18 @@ heightUp = height / 2
 vk_massive = ['@postnews', '@sysodmins', '@tproger']
 
 
-def startapp():
+def start_app():
     d.app_start('com.vkontakte.android', stop=True, use_monkey=True)
 
 
-def killapp():
+def kill_app():
     d.app_stop('com.vkontakte.android')
 
 
 def go_like():
     """Последовательно ставит лайки в заданные сообщества"""
     for _ in vk_massive:
-        startapp()
+        start_app()
         d(resourceId="com.vkontakte.android:id/smallLabel", text="Сервисы").click()
         d(resourceId="com.vkontakte.android:id/title", text="Сообщества").click()
         d.xpath('//*[@resource-id="com.vkontakte.android:id/search_milkshake_background"]/android.view.View[1]').click()
@@ -56,13 +56,13 @@ def go_like():
                 kill_proc += 1
                 if kill_proc == 8:
                     print(f'Элементы не найдены. Завершение работы программы для {_}')
-                    killapp()
+                    kill_app()
                     break
 
 
 def go_like_my_girl():
     """Тот непонятный случай когда тебе нужно лайкать какого-то человека постоянно"""
-    startapp()
+    start_app()
     d(resourceId="com.vkontakte.android:id/smallLabel", text="Сервисы").click()
     d(resourceId="com.vkontakte.android:id/title", text="Друзья").click()
     d(resourceId="com.vkontakte.android:id/fl_bg_left_part").click()
@@ -89,7 +89,7 @@ def go_like_my_girl():
             kill_proc += 1
             if kill_proc == 8:
                 print('Элементы не найдены. Завершение работы программы')
-                killapp()
+                kill_app()
                 break
 
 
