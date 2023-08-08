@@ -29,3 +29,5 @@ python3 script_name.py
 ```commandline
 pip3 install -r requirements.txt
 ```
+## Ссылки
+- [Паблики разбитые по регионам VK](https://drive.google.com/drive/folders/1MNyyQssxLCvC7oW7a6IyUB1NGBVCyYru?usp=sharing)
