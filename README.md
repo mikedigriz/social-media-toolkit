@@ -10,7 +10,7 @@
 То ничем хорошим для Вас это не закончится.
 
 Используй инструмент с умом :)  
-## Демо
+## Демо get_followers_count_for multiple_accounts_ui
 Простой подсчет подписчиков в Instagram. Представьте сколько времени ушло бы вручную на 100+ аккаунтов? 
 <p align="center">
     <img src="res/inst_example.gif">
